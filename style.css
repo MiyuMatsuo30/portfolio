@@ -1,22 +1,28 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
 
-/* レイアウト */
-.alien-center {
-    text-align: left;
-}
 /* ヘッダー
 ----------------------------------------- */
 nav {
-    margin-left:auto;
+    margin-left: auto;
     padding-right: 20px;
 }
+.page-title {
+    color: rgb(71, 137, 212);
+    font-size: 5rem;
+    text-align: center;
+    margin: 1rem;
+    padding-left: 30px;
+    line-height: 2;
+}
 .page-header {
-    background-color: #fefdfb;
     background-image: url(images/sora.jpg);
     background-size: cover;
     display: flex;
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+}
+.alien-center {
+    text-align: left;
 }
 .logo {
     height: 100px;
@@ -70,13 +76,6 @@ h4 {
     color: rgb(185, 188, 112);
     font-size: 30px;
 }
-th {
-    color: rgb(112, 153, 163);
-    font-size: 20px;
-    vertical-align: top;
-    width: 150px;
-    padding: 5px;
-}
 p {
     color: rgb(112, 153, 163);
     font-size: 18px;
@@ -87,6 +86,13 @@ li {
     font-size: 15px;
     font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
+th {
+    color: rgb(112, 153, 163);
+    font-size: 20px;
+    vertical-align: top;
+    width: 150px;
+    padding: 5px;
+}
 td {
     color: rgb(171, 170, 147);
     font-size: 15px;
@@ -94,14 +100,8 @@ td {
 }
 iframe {
     width: 100%;
-}
-.page-title {
-    color: rgb(71, 137, 212);
-    font-size: 5rem;
-    text-align: center;
-    margin: 1rem;
-    padding-left: 50px;
-    line-height: 2;
+    height: 100%;
+    aspect-ratio: 1/1;
 }
 .font-english {
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -159,4 +159,56 @@ iframe {
     max-width: 1920px;
     height: 150px;
     object-fit: cover;
+}
+
+/* レスポンシブデザイン
+----------------------------------------- */
+@media screen and (max-width: 900px) {
+    .main-nav {
+        justify-content: right;
+        gap: 2.5rem;
+        list-style: none;
+        font-size: 15px;
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+	.page-title {
+        color: rgb(71, 137, 212);
+        font-size: 30px;
+        text-align: center;
+        margin: 1rem;
+        padding-left: 30px;
+    }
+    .visimg {
+        object-fit: cover;
+        width: 40%;
+        border-radius: 30%;
+    }
+    th {
+        color: rgb(112, 153, 163);
+        font-size: 20px;
+        vertical-align: top;
+        width: 100px;
+        padding: 5px;
+    }
+    .gal {
+        object-fit: cover;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin-bottom: 45px;
+    }
+    .glink:hover {
+        object-fit: cover;
+        border-radius: 30px;
+        width: 90%;
+        height: auto;
+        margin-bottom: 45px;
+        opacity: 80%;
+    }
 }
