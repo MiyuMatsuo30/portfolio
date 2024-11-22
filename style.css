@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+/* レイアウト */
+.alien-center {
+    text-align: left;
+}
+/* ヘッダー
+----------------------------------------- */
+nav {
+    margin-left:auto;
+    padding-right: 20px;
+}
+.page-header {
+    background-color: #fefdfb;
+    background-image: url(images/sora.jpg);
+    background-size: cover;
+    display: flex;
+    padding-top: 0.5rem;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+.main-nav {
+    display: flex;
+    justify-content: right;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 30px;
+}
+.main-nav a {
+    color: rgb(71, 137, 212);
+    text-decoration: none;
+}
+.main-nav a:hover {
+    color: rgb(244, 250, 255);
+    text-decoration: none;
+}
+/* body
+----------------------------------------- */
+main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+/* Profile */
+#prof ul {
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+body {
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+}
+td {
+    text-align: left;
+}
+h2 {
+    color: rgb(206, 218, 220);
+    font-size: 30px;
+}
+h3 {
+    color: rgb(108, 139, 145);
+    font-size: 45px;
+}
+h4 {
+    color: rgb(185, 188, 112);
+    font-size: 30px;
+}
+th {
+    color: rgb(112, 153, 163);
+    font-size: 20px;
+    vertical-align: top;
+    width: 150px;
+    padding: 5px;
+}
+p {
+    color: rgb(112, 153, 163);
+    font-size: 18px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+li {
+    color: rgb(171, 170, 147);
+    font-size: 15px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+td {
+    color: rgb(171, 170, 147);
+    font-size: 15px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+iframe {
+    width: 100%;
+}
+.page-title {
+    color: rgb(71, 137, 212);
+    font-size: 5rem;
+    text-align: center;
+    margin: 1rem;
+    padding-left: 50px;
+    line-height: 2;
+}
+.font-english {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: normal;
+}
+.cover-in {
+    background-size: cover;
+    background-position: center bottom;
+    height: 200px;
+}
+.cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.image {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.visimg {
+    object-fit: cover;
+    border-radius: 30%;
+}
+.gal {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 45px;
+}
+.glink:hover {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 60%;
+    height: auto;
+    margin-bottom: 45px;
+    opacity: 80%;
+}
+.link {
+    color: rgb(171, 170, 147);
+    /* text-decoration: none; */
+}
+.link:hover {
+    color: rgb(112, 153, 163);
+    /* text-decoration: none; */
+}
+/* footer
+----------------------------------------- */
+.footerimg {
+    margin-bottom: 80px;
+}
+.footerimg img {
+    width: 100%;
+    max-width: 1920px;
+    height: 150px;
+    object-fit: cover;
+}
